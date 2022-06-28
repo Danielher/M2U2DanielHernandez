@@ -1,6 +1,7 @@
 const boton = document.getElementById("submit");
 
-boton.addEventListener("click", () => {
+boton.addEventListener("click", (e) => {
+    e.preventDefault();
     let A = document.getElementById("n1");
     let B = document.getElementById("n2");
     let C = document.getElementById("n3");
