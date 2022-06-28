@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion Materias</title>
+    
+</head>
+<body>
+    <h1>Formulario para inscripcion de Materias</h1>
+
+    <p>A continuacion ingrese las materias y el valor respectivo de cada una</p>
+
+    <form  id="formulario">
+        <div class="form-group">
+            <label id="name-label" for="name">Nombre del estudiante</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su nombre" required="">
+        </div>
+
+        <div class="form-group">
+            <label id="materia-label" for="materia">Materia</label>
+            <input type="text" name="materia" id="materia" class="form-control" placeholder="Ingrese la materia" required="">
+        </div>
+
+        <div class="form-group">
+            <label id="valor-label" for="valor">Valor</label>
+            <input type="number" name="valor" id="valor" class="form-control" placeholder="Ingrese el valor de la materia" required="">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Cargar Materia
+            </button>
+            </div>
+
+    </form>
+
+    <div class="formatoTabla">
+      <table id="tablaDatos">
+        <tr>
+          <th>Nombre Estudiante </th>
+          <th>Materia </th>
+          <th>Valor </th>
+        </tr>
+      </table>
+    </div>
+ 
+    <script type="text/javascript" src="/calculos.js"></script>    
+</body>
+
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root{
+    --colorAzul: #4484CE;
+    --colorAluminio: #D9D9D9;
+    --Amarillo: #F9CF00;
+    --Naranja: #F19F4D;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--colorAzul);
+  margin: 0;
+}
+
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+form {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  background: var(--colorAluminio);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+   
+}
+
+.form-control {
+  display:block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: inherit;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  align-items: center;
+  width: 60%;
+  padding: 0.75rem;
+  background: var(--Naranja);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+</style>

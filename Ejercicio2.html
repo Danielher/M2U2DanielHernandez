@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <h1>Calculo de numero mayor y menor</h1>
+
+            <p>Ingrese un numero entero positivo en cada opcion para calcular cual es el mayor y el menor de los numeros ingresado</p>
+    <div>
+        <form action="">
+            <div class="form-group">
+                <label id="n1-label" for="n1">Primer Numero</label>
+                <input type="number" name="n1" id="n1" class="form-control" placeholder="Ingrese aqui el numero 1" required="">
+            </div>
+
+            <div class="form-group">
+                <label id="n2-label" for="n2">Segundo Numero</label>
+                <input type="number" name="n2" id="n2" class="form-control" placeholder="Ingrese aqui el numero 2" required="">
+            </div>
+
+            <div class="form-group">
+                <label id="n3-label" for="n3">Tercer Numero</label>
+                <input type="number" name="n3" id="n3" class="form-control" placeholder="Ingrese aqui el numero 3" required="">
+            </div>
+
+            <div class="form-group">
+                <label id="n4-label" for="n4">Cuarto Numero</label>
+                <input type="number" name="n4" id="n4" class="form-control" placeholder="Ingrese aqui el numero 4" required="">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Calcular
+                </button>
+            </div>
+
+            <div class="form-group">
+                <h3 id="resultado">...</h3>
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+<script src="Algoritmo2.js"></script>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root{
+    --colorAzul: #4484CE;
+    --colorAluminio: #D9D9D9;
+    --Amarillo: #F9CF00;
+    --Naranja: #F19F4D;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--colorAzul);
+  margin: 0;
+}
+
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+form {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  background: var(--colorAluminio);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+   
+}
+
+.form-control {
+  display:block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: inherit;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  align-items: center;
+  width: 60%;
+  padding: 0.75rem;
+  background: var(--Naranja);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+</style>
